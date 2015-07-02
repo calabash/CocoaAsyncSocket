@@ -12,38 +12,32 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 @synthesize window = _window;
 @synthesize viewController = _viewController;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-	// Setup our logging framework.
-	[DDLog addLogger:[DDTTYLogger sharedInstance]];
-	
-	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	
-	self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-	self.window.rootViewController = self.viewController;
-	
-	[self.window makeKeyAndVisible];
-	return YES;
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  // Setup our logging framework.
+  [DDLog addLogger:[DDTTYLogger sharedInstance]];
+
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+  self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+  self.window.rootViewController = self.viewController;
+
+  [self.window makeKeyAndVisible];
+  return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{	
+- (void)applicationWillResignActive:(UIApplication *)application {
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
+- (void)applicationDidEnterBackground:(UIApplication *)application {
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
+- (void)applicationWillEnterForeground:(UIApplication *)application {
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
+- (void)applicationDidBecomeActive:(UIApplication *)application {
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
+- (void)applicationWillTerminate:(UIApplication *)application {
 }
 
 @end

@@ -6,9 +6,8 @@
 
 @synthesize window = _window;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-	[TestPreBuffer start];
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+  [TestPreBuffer start];
 }
 
 @end

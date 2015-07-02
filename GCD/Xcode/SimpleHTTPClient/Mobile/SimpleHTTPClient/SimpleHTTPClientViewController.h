@@ -2,7 +2,7 @@
 
 
 @interface SimpleHTTPClientViewController : UIViewController {
-    
+
 }
 
 @end
